@@ -30,6 +30,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidSupportedAbis />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -63,6 +64,7 @@
     <Compile Include="CustomRenderers\CustomProgressBarRenderer.cs" />
     <Compile Include="CustomRenderers\CustomTextCellRenderer.cs" />
     <Compile Include="CustomRenderers\CustomViewCellRenderer.cs" />
+    <Compile Include="Dependencies\Share.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,7 +92,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\xml\file_provider_paths.xml" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ExpensesApp\ExpensesApp.csproj">
       <Project>{131858EE-6B71-4B71-8972-1029A7F1B64A}</Project>

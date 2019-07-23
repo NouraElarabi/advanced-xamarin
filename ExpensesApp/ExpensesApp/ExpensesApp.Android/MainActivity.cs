@@ -7,6 +7,8 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using System.IO;
+using Xamarin.Forms;
+using ExpensesApp.Droid.Dependencies;
 
 namespace ExpensesApp.Droid
 {
@@ -23,6 +25,9 @@ namespace ExpensesApp.Droid
             string db_name = "expenses_db.db3";
             string folder_path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             string full_path = Path.Combine(folder_path, db_name);
+
+            //DependencyService.Register<Share>();
+            // this can be used here instead of the assembly line but the assembly line is better because you can keep all attributes in a seperate file
 
             LoadApplication(new App(full_path));
         }
