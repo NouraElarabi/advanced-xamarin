@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:ExpensesApp.ViewModels"
+             xmlns:behaviors="clr-namespace:ExpensesApp.Behaviors"
              x:Class="ExpensesApp.Views.ExpensesPage">
     
     <ContentPage.Resources>
@@ -15,6 +16,9 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <ListView ItemsSource="{Binding Source={StaticResource vm}, Path=Expenses}">
+            <ListView.Behaviors>
+                <behaviors:ListViewBehavior/>
+            </ListView.Behaviors>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding Name}" Detail="{Binding Category}" StyleId="checkmark"/>
