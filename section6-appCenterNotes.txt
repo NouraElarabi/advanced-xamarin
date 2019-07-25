@@ -1,0 +1,4 @@
+we use app center to :
+- know if,when and why the app crashes
+- know the type of devices the users use, how many times the app is opened and similar analytics
+- track amount of user logins, button presses or errors in the app without crashing
