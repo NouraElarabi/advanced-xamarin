@@ -182,4 +182,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\expenses%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\profits.png" />
+  </ItemGroup>
 </Project>

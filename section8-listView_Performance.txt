@@ -1,0 +1,5 @@
+cachingStrategy:
+- RecycleElement (better performance)
+reuses existing cells , recycle them with new info
+- RetainElement (default)
+keeps all info in memory
