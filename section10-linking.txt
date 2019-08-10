@@ -1,0 +1,19 @@
+andriod project options, linker properties
+the linker evaluates if refernced assemblies are being used in the xamarin project or not.
+if not they wont be included in the package.
+None:
+turns off the linker "largest size"
+SDK Assemblies only:
+evaluates assemblies from xamarin. android "smaller"
+SDK and user Assemblies:
+evaluates all "the smallest"
+
+what if some code was being evaluated as not refernced but I want it there
+use attributes, you can see that in the contacts class
+
+this you might need for :
+-You might have code that you call dynamically via System.Reflection.MemberInfo.Invoke.
+- If you instantiate types dynamically, you may want to preserve the default constructor of your types.
+- If you use XML serialization, you may want to preserve the properties of your types.
+
+https://docs.microsoft.com/en-us/xamarin/android/deploy-test/linker
