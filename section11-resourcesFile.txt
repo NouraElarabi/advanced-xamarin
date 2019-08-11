@@ -1,0 +1,3 @@
+right click the main project
+select resources
+click the link 

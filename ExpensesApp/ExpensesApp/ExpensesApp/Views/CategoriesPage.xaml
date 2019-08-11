@@ -4,6 +4,7 @@
              xmlns:vm="clr-namespace:ExpensesApp.ViewModels"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="true"
+             xmlns:te="clr-namespace:ExpensesApp.Views"
              x:Class="ExpensesApp.Views.CategoriesPage">
 
     <ContentPage.Resources>
@@ -21,7 +22,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Label x:Name="titleLabel"
-                   Text="Categories"
+                   Text="{te:TranslateExtension Text=title}"
                    StyleClass="titleLabel">
                 <VisualStateManager.VisualStateGroups>
                     <!--custom states-->
@@ -58,10 +59,10 @@
                         </VisualStateGroup>-->
                     </VisualStateManager.VisualStateGroups>
             </Label>
-            <!--<Button x:Name="exampleButton"
+            <Button x:Name="exampleButton"
                     Pressed="Handle_Pressed"
                     Released="Handle_Released"
-                    Text="Button">
+                    Text="{te:TranslateExtension Text=buttonLabel}">
                 <VisualStateManager.VisualStateGroups>
                     <VisualStateGroup Name="CommonStates">
                         <VisualState Name="Normal">
@@ -83,9 +84,9 @@
                         </VisualState>
                     </VisualStateGroup>
                 </VisualStateManager.VisualStateGroups>
-            </Button>-->
+            </Button>
 
-            <ImageButton Source="profits.png"
+            <!--<ImageButton Source="profits.png"
                          Clicked="ImageButton_Pressed"
                          HeightRequest="200"
                          WidthRequest="200">
@@ -103,7 +104,7 @@
                         </VisualState>
                     </VisualStateGroup>
                 </VisualStateManager.VisualStateGroups>
-            </ImageButton>
+            </ImageButton>-->
 
 
             <ListView ItemsSource="{Binding Source={StaticResource vm}, Path=CategoryExpensesCollection}">

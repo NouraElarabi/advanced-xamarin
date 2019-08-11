@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="debtCategory" xml:space="preserve">
+    <value>Deuda</value>
+    <comment>This string is the name of one of the categories</comment>
+  </data>
+  <data name="foodCategory" xml:space="preserve">
+    <value>Alimentación</value>
+    <comment>This string is the name of one of the categories</comment>
+  </data>
+  <data name="healthCategory" xml:space="preserve">
+    <value>Salud</value>
+    <comment>This string is the name of one of the categories</comment>
+  </data>
+  <data name="housingCategory" xml:space="preserve">
+    <value>Hogar</value>
+    <comment>This string is the name of one of the categories</comment>
+  </data>
+  <data name="otherCategory" xml:space="preserve">
+    <value>Otros</value>
+    <comment>This string is the name of one of the categories</comment>
+  </data>
+  <data name="personalCategory" xml:space="preserve">
+    <value>Personal</value>
+    <comment>This string is the name of one of the categories</comment>
+  </data>
+  <data name="travelCategory" xml:space="preserve">
+    <value>Viajes</value>
+    <comment>This string is the name of one of the categories</comment>
+  </data>
+  <data name="title">
+        <value>Categorías</value>
+    </data>
+    <data name="buttonLabel">
+        <value>Botón</value>
+    </data>
+</root>
