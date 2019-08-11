@@ -21,6 +21,8 @@ namespace ExpensesApp
         {
             InitializeComponent();
 
+            ExpensesApp.Resources.Resources.Culture = new System.Globalization.CultureInfo("es");// for testing purposes only
+
             DatabasePath = databasePath;
 
             MainPage = new NavigationPage(new MainPage());

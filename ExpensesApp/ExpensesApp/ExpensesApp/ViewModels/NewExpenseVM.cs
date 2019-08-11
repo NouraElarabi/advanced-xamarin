@@ -105,7 +105,7 @@ namespace ExpensesApp.ViewModels
             {
                 Name = ExpenseName,
                 Amount = ExpenseAmount,
-                Category = ExpenseCategory,
+                Category = ExpenseCategory,//after adding localization this will cause an issu, it should have been using an ID or something not text
                 Date = ExpenseDate,
                 Description = ExpenseDescription
             };
@@ -121,13 +121,20 @@ namespace ExpensesApp.ViewModels
         private void GetCategories()
         {
             Categories.Clear();
-            Categories.Add("Housing");
-            Categories.Add("Debt");
-            Categories.Add("Health");
-            Categories.Add("Food");
-            Categories.Add("Personal");
-            Categories.Add("Travel");
-            Categories.Add("Other");
+            //Categories.Add("Housing");
+            //Categories.Add("Debt");
+            //Categories.Add("Health");
+            //Categories.Add("Food");
+            //Categories.Add("Personal");
+            //Categories.Add("Travel");
+            //Categories.Add("Other");
+            Categories.Add(ExpensesApp.Resources.Resources.housingCategory);
+            Categories.Add(ExpensesApp.Resources.Resources.debtCategory);
+            Categories.Add(ExpensesApp.Resources.Resources.healthCategory);
+            Categories.Add(ExpensesApp.Resources.Resources.foodCategory);
+            Categories.Add(ExpensesApp.Resources.Resources.personalCategory);
+            Categories.Add(ExpensesApp.Resources.Resources.travelCategory);
+            Categories.Add(ExpensesApp.Resources.Resources.otherCategory);
         }
 
         public void GetExpenseStatus()
