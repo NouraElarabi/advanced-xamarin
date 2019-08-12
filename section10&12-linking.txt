@@ -1,4 +1,4 @@
-andriod project options, linker properties
+andriod/IOS or other project options, linker properties
 the linker evaluates if refernced assemblies are being used in the xamarin project or not.
 if not they wont be included in the package.
 None:
