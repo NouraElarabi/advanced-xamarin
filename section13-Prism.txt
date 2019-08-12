@@ -1,0 +1,32 @@
+0- App.cs:
+No Prism: is of type Application
+Prism: is of type PrismApplication
+see all setup steps
+
+1- Registering VMS:
+No Prism: static resources in each Xaml file
+Prism: RegisterTypes function in App.xaml.cs
+
+2- Navigation:
+No Prism: in App.Xaml.cs -> MainPage = new NavigationPage(new [MainPage]());
+	  in commands in VMSs -> Application.Current.MainPage.Navigation.PushAsync(new [NewExpensePage]());
+Prism: use the Navigation Service
+
+3- commands:
+No Prism: new Command(action)
+Prism: new DelegateCommand(action)
+
+4- add functionality to when the view appears and disappears
+No Prism: in the view .cs file "code behind"
+Prism: make the VM implement IPageLifecycleAware -> OnAppearing , OnDisappearing
+
+5- add functionality to when and item from the list view is selected
+No Prism: in the view .cs file "code behind" as this is an event, or bind to the selected item and use set
+Prism: use the prism behavior -> EventToCommandBehavior
+
+
+6- passing a parameter while navigating
+No Prism: "code behind" make a constructor in the view.xaml.cs file that takes the parameter, inside that get the vm from the resources, set a variable in the vm to that parameter, now send the parameter in the new view(param) in the navigation function
+Prism: "in the vm" use INavigatedAware in the view VM, and navigate to this page using NavigationParameters
+
+prism issues: depending on strings while navigating
